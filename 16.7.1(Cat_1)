@@ -1,0 +1,12 @@
+from Cat import Cat
+
+animal_1 = Cat("Барон", "Мальчик", "2")
+animal_2 = Cat("Сэм", "Мальчик", "2")
+
+print("Имя:", animal_1.name)
+print("Пол:", animal_1.gender)
+print("Возраст:", str(animal_1.age))
+print("-----------")
+print("Имя:", animal_2.name)
+print("Пол:", animal_2.gender)
+print("Возраст:", str(animal_2.age))
