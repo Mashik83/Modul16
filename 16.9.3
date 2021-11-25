@@ -1,0 +1,14 @@
+class Wallet:
+    def __init__(self, name, balance):
+        self.name = name
+        self.balance = balance
+
+    def get_balance(self):
+        return f'Клиент "{self.name}". Баланс: {self.balance} руб.'
+
+user_1 = Wallet("Иван Петров", 50)
+user_2 = Wallet("Петр Петров", 600)
+
+print(user_1.get_balance())
+print("--------------------")
+print(user_2.get_balance())
