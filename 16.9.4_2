@@ -1,0 +1,17 @@
+from guest import Guest
+
+class New(Guest):
+    def __init__(self, status, **kwargs):
+        self.status = status
+        super().__init__(**kwargs)
+
+    def get_post(self):
+        return f'{self.name}, {self.city}, {self.status}'
+
+guest_1 = New(name="Иван Иванов", city="г. Москва", status="Наставник")
+guest_2 = New(name="Петр Петров", city="г. Сочи", status="Ученик")
+
+print(f'"{guest_1.name}, {guest_1.city}, статус, "{guest_1.status}"')
+print(f'"{guest_2.name}, {guest_2.city}, статус, "{guest_2.status}"')
+
+print(guest_1.get_post())
